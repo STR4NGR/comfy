@@ -1,0 +1,84 @@
+body {
+  width: 700px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+div {
+  margin: 10px 0;
+}
+label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 10px;
+}
+input {
+  width: 150px;
+  padding: 5px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #45a049;
+}
+div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: fit-content; /* Или задайте конкретную ширину, например, 300px */
+}
+#doubleplus {
+    background-color: #E56F26; /* Оранжевый цвет фона */
+    border-color: #E56F26; /* Оранжевый цвет границы */
+    width: 100%; /* Убедимся, что кнопка растягивается */
+    padding-left: 20px; /* Увеличенная ширина через отступы */
+    padding-right: 20px;
+    padding-top: 20px; /* Увеличиваем высоту через верхний отступ */
+    padding-bottom: 20px; /* Увеличиваем высоту через нижний отступ */
+    font-family: 'Roboto', sans-serif; /* Шрифт Roboto */
+}
+#standart {
+    background-color: #E56F26; /* Оранжевый цвет фона */
+    border-color: #E56F26; /* Оранжевый цвет границы */
+    width: 100%; /* Убедимся, что кнопка растягивается */
+    padding-left: 20px; /* Увеличенная ширина через отступы */
+    padding-right: 20px;
+    padding-top: 20px; /* Увеличиваем высоту через верхний отступ */
+    padding-bottom: 20px; /* Увеличиваем высоту через нижний отступ */
+    font-family: 'Roboto', sans-serif; /* Шрифт Roboto */
+}
+#ro {
+    background-color: #E56F26; /* Оранжевый цвет фона */
+    border-color: #E56F26; /* Оранжевый цвет границы */
+    width: 100%; /* Убедимся, что кнопка растягивается */
+    padding-left: 20px; /* Увеличиваем внутренние отступы для большей ширины */
+    padding-right: 20px;
+    font-family: 'Roboto', sans-serif; /* Шрифт Roboto */
+}
+#doubleminus {
+    background-color: #E56F26; /* Оранжевый цвет фона */
+    border-color: #E56F26; /* Оранжевый цвет границы */
+    width: 100%; /* Убедимся, что кнопка растягивается */
+    padding-left: 20px; /* Увеличиваем внутренние отступы для большей ширины */
+    padding-right: 20px;
+    font-family: 'Roboto', sans-serif; /* Шрифт Roboto */
+}
+#settings {
+    background-color: #F6E9D2; /* Оранжевый цвет фона */
+    border-color: #E56F26; /* Оранжевый цвет границы */
+    width: 100%; /* Растягиваем на всю ширину контейнера */
+    padding-left: 20px; /* Увеличенная ширина через отступы */
+    padding-right: 20px;
+    font-family: 'Roboto', sans-serif; /* Шрифт Roboto */
+    color: #373E3F; /* Белый цвет текста */
+    font-weight: bold;
+}

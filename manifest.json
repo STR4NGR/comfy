@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Comfy",
+  "version": "1.0",
+  "description": "Расширение для заполнения полей на сайте МойСклад",
+  "action": {
+    "default_popup": "initialState.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://online.moysklad.ru/app/*"],
+      "js": ["fillState.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
