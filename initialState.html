@@ -7,26 +7,168 @@
   <link rel="stylesheet" href="state.css">
 </head>
 <body>
-  <button id="settings" class="btn btn-primary w-100">Настройки</button>
-  <div>
-      <input type="text" id="E10" placeholder="Значение E10">
-      <input type="text" id="F10" placeholder="Значение F10">
-      <input type="text" id="F27" placeholder="Значение F27">
+  <div id="main-menu" class="row page active">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <button id="settings-btn" class="btn btn-primary w-100 mb-2" onclick="showPage('settings')">Настройки</button>
+        <div>
+            <div class="col">
+              <label for="doubleplus-input-1" class="form-label compact-label">E10</label>
+              <input type="text" id="E10" class="input-control mb-1" placeholder="Значение E10">
+            </div>
+            <div class="col">
+              <label for="doubleplus-input-1" class="form-label compact-label">F10</label>
+              <input type="text" id="F10" class="input-control mb-1" placeholder="Значение F10">
+            </div>
+            <div class="col">
+              <label for="doubleplus-input-1" class="form-label compact-label">F27</label>
+              <input type="text" id="F27" class="input-control mb-1" placeholder="Значение F27">
+            </div>
+        </div>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col">
+            <button id="doubleplus-btn" class="btn btn-secondary w-100" onclick="showPage('doubleplus')">Два плюса</button>
+          </div>
+          <div class="col">
+            <button id="standart-btn" class="btn btn-secondary w-100" onclick="showPage('standart')">Стандарт</button>
+          </div>
+          <div class="col-3">
+            <button id="doubleminus-btn" class="btn btn-secondary w-100" onclick="showPage('doubleminus')">Перекос и два минуса</button>
+          </div>
+          <div class="col">
+            <button id="ro-btn" class="btn btn-secondary w-100" onclick="showPage('ro')">Ромашка и RO</button>
+          </div>
+        </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <button id="doubleplus" class="btn btn-secondary w-100">Два плюса</button>
+
+  <div id="settings" class="page">
+    <div class="row">
+      <div class="col">
+        <h3>Настройки</h3>
+      </div>
+      <div class="col">
+        <label for="rounding-input" class="form-label">Округление</label>
+        <input type="text" id="G4" class="form-control" placeholder="Значение G4">
+      </div>
     </div>
-    <div class="col">
-      <button id="standart" class="btn btn-secondary w-100">Стандарт</button>
+    <div class="row">
+      <div class="col">
+        <label for="doubleplus-input-1" class="form-label compact-label">Два плюса</label>
+        <input type="text" id="B5" class="form-control mb-1" placeholder="Значение B5">
+        <input type="text" id="C5" class="form-control mb-1" placeholder="Значение C5">
+        <input type="text" id="C6" class="form-control mb-1" placeholder="Значение C6">
+      </div>
+      <div class="col">
+        <label for="standart-input-1" class="form-label">Стандарт</label>
+        <input type="text" id="E5" class="form-control mb-1" placeholder="Значение E5">
+        <input type="text" id="F5" class="form-control mb-1" placeholder="Значение F5">
+        <input type="text" id="G5" class="form-control mb-1" placeholder="Значение G5">
+        <input type="text" id="H5" class="form-control mb-1" placeholder="Значение H5">
+        <input type="text" id="E6" class="form-control mb-1" placeholder="Значение E6">
+        <input type="text" id="H6" class="form-control mb-1" placeholder="Значение H6">
+      </div>
+      <div class="col">
+        <label for="doubleminus-input-1" class="form-label">Перекос и два минуса</label>
+        <input type="text" id="J5" class="form-control mb-1" placeholder="Значение J5">
+        <input type="text" id="K5" class="form-control mb-1" placeholder="Значение K5">
+        <input type="text" id="J6" class="form-control mb-1" placeholder="Значение J6">
+        <input type="text" id="K6" class="form-control mb-1" placeholder="Значение K6">
+      </div>
+      <div class="col">
+        <label for="ro-input-1" class="form-label compact-label">Ромашка и RO</label>
+        <input type="text" id="M5" class="form-control mb-1" placeholder="Значение M5">
+        <input type="text" id="N5" class="form-control mb-1" placeholder="Значение N5">
+        <input type="text" id="M6" class="form-control mb-1" placeholder="Значение M6">
+        <input type="text" id="N6" class="form-control mb-1" placeholder="Значение N6">
+        <input type="text" id="O6" class="form-control mb-1" placeholder="Значение O6">
+      </div>
     </div>
-    <div class="col col-3">
-      <button id="doubleminus" class="btn btn-secondary w-100">Перекос и два минуса</button>
-    </div>
-    <div class="col">
-      <button id="ro" class="btn btn-secondary w-100">Ромашка и RO</button>
-    </div>
+    <button id="settings-back-btn" class="btn btn-primary w-100 mb-2" onclick="showPage('main-menu')">Назад</button>
   </div>
+  
+  <div id="doubleplus" class="page">
+    <h3>Два плюса</h3>
+    <div class="row">
+      <div>
+        <div class="col">
+          <label class="form-label">C8: <span id="c8-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">C15: <span id="c15-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">C17: <span id="c17-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">C21: <span id="c21-value"></span></label>
+        </div>
+      </div>
+    </div>
+    <button id="doubleplus-back-btn" class="btn btn-secondary w-100 back-btn" onclick="showPage('main-menu')">Назад</button>
+  </div>
+
+  <div id="standart" class="page">
+    <h3>Стандарт</h3>
+    <div class="row">
+      <div>
+        <div class="col">
+          <label class="form-label">G8: <span id="g8-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">G15: <span id="g15-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">G17: <span id="g17-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">G21: <span id="g21-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">G25: <span id="g25-value"></span></label>
+        </div>
+      </div>
+    </div>
+    <button id="standart-back-btn" class="btn btn-secondary w-100 back-btn" onclick="showPage('main-menu')">Назад</button>
+  </div>
+
+  <div id="doubleminus" class="page">
+    <h3>Перекос и два минуса</h3>
+    <div class="row">
+      <div>
+        <div class="col">
+          <label class="form-label">J8: <span id="j8-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">J15: <span id="j15-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">J21: <span id="j21-value"></span></label>
+        </div>
+      </div>
+    </div>
+    <button id="doubleminus-back-btn" class="btn btn-secondary w-100 back-btn" onclick="showPage('main-menu')">Назад</button>
+  </div>
+
+  <div id="ro" class="page">
+    <h3>Ромашка и ro</h3>
+    <div class="row">
+      <div>
+        <div class="col">
+          <label class="form-label">M8: <span id="m8-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">M15: <span id="m15-value"></span></label>
+        </div>
+        <div class="col">
+          <label class="form-label">M21: <span id="m21-value"></span></label>
+        </div>
+      </div>
+    </div>
+    <button id="ro-back-btn" class="btn btn-secondary w-100 back-btn" onclick="showPage('main-menu')">Назад</button>
+  </div>
+
   <script src="initialState.js"></script>
 </body>
 </html>
