@@ -11,6 +11,12 @@
     "activeTab",
     "storage"
   ],
+  "web_accessible_resources": [
+    {
+      "resources": ["settings.html", "doubleplus.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "background": {
     "service_worker": "background.js"
   },

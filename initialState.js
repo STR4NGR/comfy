@@ -268,12 +268,14 @@ function showPage(pageId) {
       const g25 = e10;
       const k8 = g8 - g8 / 100 * j5;
       const k13 = g13 - g13 / 100 * k5;
-      const j13 = Math.round(k13) * 10;
+      const j13 = Math.round(k13 / 10) * 10;;
       const k15 = g15 - g15 / 100 * j6;
       const j17 = g17;
       const k21 = g21 - g21 / 100 * k6;
       const j25 = g25;
       const j27 = f27;
+      const n13 = g13 - g13 / 100 * n5;
+      const m13 = Math.round(n13 / 10) * 10;
 
       const j8 = Math.round(k8 / 10) * 10 + g4;
       const j15 = Math.round(k15 / 10) * 10 + g4;
@@ -281,6 +283,7 @@ function showPage(pageId) {
 
       // Обновляем значения в DOM
       document.getElementById('j8-value').textContent = j8;
+      document.getElementById('j13-value').textContent = j13;
       document.getElementById('j15-value').textContent = j15;
       document.getElementById('j21-value').textContent = j21;
     }
@@ -324,12 +327,12 @@ function showPage(pageId) {
       const m25 = g25;
       const m27 = f27;
 
-      
       const m15 = Math.round(n15 / 10) * 10 + g4;
       const m21 = Math.round(n21 / 10) * 10 + g4;
       
       // Обновляем значения в DOM
       document.getElementById('m8-value').textContent = m8;
+      document.getElementById('m13-value').textContent = m13;
       document.getElementById('m15-value').textContent = m15;
       document.getElementById('m21-value').textContent = m21;
     }
