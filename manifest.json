@@ -1,35 +1,40 @@
 {
-  "manifest_version": 3,
-  "name": "Comfy",
-  "version": "1.0",
-  "description": "Расширение для заполнения полей на сайте МойСклад",
-  "action": {
-    "default_popup": "initialState.html",
-    "default_icon": "icon.png"
-  },
-  "permissions": [
-    "activeTab",
-    "storage"
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": ["settings.html", "doubleplus.html"],
-      "matches": ["<all_urls>"]
+    "manifest_version": 3,
+    "name": "Comfy",
+    "version": "1.0",
+    "description": "Расширение для заполнения полей на сайте МойСклад",
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src https://fonts.gstatic.com"
+    },
+    "action": {
+        "default_popup": "initialState.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["initialState.html", "state.css", "initialState.js"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
     }
-  ],
-  "background": {
-    "service_worker": "background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["https://online.moysklad.ru/app/*"],
-      "js": ["fillState.js"]
-    }
-  ],
-  "icons": {
-    "16": "icon16.png",
-    "32": "icon32.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
-  }
 }

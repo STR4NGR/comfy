@@ -1,21 +1,18 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.action === "fillFields") {
-    const { field1, field2, field3 } = message.values;
-    setTimeout(() => {
-      const input1 = document.querySelector("#field1");
-      const input2 = document.querySelector("#field2");
-      const input3 = document.querySelector("#field3");
-      if (input1 && input2 && input3) {
-        input1.value = field1;
-        input2.value = field2;
-        input3.value = field3;
-        const calculateButton = document.querySelector("#calculate");
-        if (calculateButton) {
-          calculateButton.click();
-        }
-      } else {
-        console.error("Одно или несколько полей не найдены");
-      }
-    }, 1000);
+  console.log('Received message:', message); // Для отладки
+  if (message.action === 'fillGoodPriceField') {
+    const inputField = document.querySelector('input.gwt-TextBox.double-editor.tutorial-stage-sales-fifth-step.good-price-field');
+    if (inputField) {
+      console.log('Input field found, setting value to:', message.value); // Для отладки
+      inputField.value = message.value;
+      // Имитация события ввода для триггера обработчиков
+      const inputEvent = new Event('input', { bubbles: true });
+      inputField.dispatchEvent(inputEvent);
+      // Имитация события изменения, если требуется
+      const changeEvent = new Event('change', { bubbles: true });
+      inputField.dispatchEvent(changeEvent);
+    } else {
+      console.error('Input field not found with selector: input.gwt-TextBox.double-editor.tutorial-stage-sales-fifth-step.good-price-field');
+    }
   }
 });

@@ -233,9 +233,3 @@ button:hover {
     color: #FFFFFF;
     font-weight: 900;
 }
-
-#B5, #C5, #C6, #E5, #F5, #G5, #H5,
-#E6, #H6 {
-  width: 75px;
-  margin: 25px;
-}
