@@ -17,7 +17,7 @@
     ],
     "web_accessible_resources": [
         {
-            "resources": ["initialState.html", "state.css", "initialState.js"],
+            "resources": ["initialState.html", "state.css", "initialState.js", "background.png"],
             "matches": ["<all_urls>"]
         }
     ],

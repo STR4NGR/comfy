@@ -12,47 +12,57 @@
       <div class="col-md-6">
         <button id="settings-btn" class="btn btn-primary w-100 mb-2">Настройки</button>
         <div class="input-group">
-            <!-- Закупочная цена и F10 -->
+          <!-- Закупочная цена и F10 -->
           <div class="row align-items-center mb-2">
-            <div class="col-auto">
-              <label for="E10" class="form-label compact-label">Цена для расчёта</label>
+            <div class="col">
+              <div class="orange-rectangle mb-1"></div>
+              <div class="orange-rectangle mb-1"></div>
+                <label for="E10" class="form-label compact-label">Цена для расчёта</label>
             </div>
             <div class="col">
+              <div class="computed-value"><span id="e9-value">0.00</span></div>
               <input type="text" id="E10" class="input-control form-control" placeholder="Значение E10">
             </div>
-              <!-- E10 и Цена для расчёта -->
-              <div class="col">
-                <input type="text" id="F10" class="input-control form-control" placeholder="Значение F10">
-              </div>
-              <div class="col-auto">
-                <label for="F10" class="form-label compact-label">Закупочная цена</label>
+            <div class="col">
+              <div class="orange-rectangle mb-1"></div>
+              <label for="F10" class="form-label compact-label">Закупочная цена</label>
+              <input type="text" id="F10" class="input-control form-control" placeholder="Значение F10">
+            </div>
+            </div>
+          </div>
+          <div class="row align-items-center mb-2">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+              <div class="align-items-center d-flex flex-column mb-2">
+                <div class="gray-rectangle mb-1"></div>
+                <div class="gray-rectangle mb-1"></div>
+                <div class="gray-rectangle mb-1"></div>
+                <div class="gray-rectangle mb-1"></div>
+                <div class="gray-rectangle mb-1"></div>
+                <div class="gray-rectangle mb-1"></div>
+                <div class="gray-rectangle mb-1"></div>
               </div>
             </div>
-
-          <div class="row align-items-center mb-2">
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col">
-                  <div class="align-items-center d-flex flex-column mb-2">
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                  </div>
+            <div class="col-auto">
+              <div class="d-flex flex-column mb-2">
+                <div class="computed-value">РОМАШКА 1 РАЗ-Р</div>
+                <div class="computed-value"><span id="g28-value">0.00</span></div>
+                <div class="computed-value">РОМАШКА 2 РАЗ-Р</div>
+                <div class="computed-value"><span id="g29-value">0.00</span></div>
+                <div class="computed-value">РОМАШКА 3 РАЗ-Р</div>
+                <div class="computed-value"><span id="g30-value">0.00</span></div>
               </div>
             </div>
           </div>
@@ -67,9 +77,11 @@
           </div>
           <div class="col">
             <input type="text" id="F27" class="input-control form-control max-price" placeholder="Значение F27">
+            <div class="computed-value"><span id="h27-value">0.00</span></div>
           </div>
         </div>
       </div>
+    </div>
     <div class="row mt-3">
       <div class="col">
         <button id="doubleplus-btn" class="btn btn-secondary w-100">Два плюса</button>
@@ -134,61 +146,61 @@
   <div id="doubleplus" class="page">
     <h3 id="doubleplus-header">Два плюса</h3>
     <div class="row">
-        <div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">МИНИМАЛЬНАЯ ЦЕНА:</label>
-                </div>
-                <div class="col-3">
-                    <span id="c8-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">OZ+ИМ+ТОМА+++++:</label>
-                </div>
-                <div class="col-3">
-                    <span id="c15-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">OZ=Тома СТАРцена===:</label>
-                </div>
-                <div class="col-3">
-                    <span id="c17-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">*ЯМ===5М===5М====ЯМ*:</label>
-                </div>
-                <div class="col-3">
-                    <span id="c21-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
+      <div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">МИНИМАЛЬНАЯ ЦЕНА:</label>
+          </div>
+          <div class="col-3">
+            <span id="c8-value"></span>
+          </div>
         </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">OZ+ИМ+ТОМА+++++:</label>
+          </div>
+          <div class="col-3">
+            <span id="c15-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">OZ=Тома СТАРцена===:</label>
+          </div>
+          <div class="col-3">
+            <span id="c17-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">*ЯМ===5М===5М====ЯМ*:</label>
+          </div>
+          <div class="col-3">
+            <span id="c21-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <button id="doubleplus-apply-btn" class="btn btn-secondary w-100 back-btn">Заполнить</button>
     <button id="doubleplus-back-btn" class="btn btn-secondary w-100 back-btn">Назад</button>
@@ -197,197 +209,197 @@
   <div id="standart" class="page">
     <h3 id="standart-header">Стандарт</h3>
     <div class="row">
-        <div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">МИНИМАЛЬНАЯ ЦЕНА:</label>
-                </div>
-                <div class="col-3">
-                    <span id="g8-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">OZ+ИМ+ТОМА+++++:</label>
-                </div>
-                <div class="col-3">
-                    <span id="g15-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">OZ=Тома СТАРцена===:</label>
-                </div>
-                <div class="col-3">
-                    <span id="g17-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">*ЯМ===5М===5М====ЯМ*:</label>
-                </div>
-                <div class="col-3">
-                    <span id="g21-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">^^^ ^^^ ^^^ ^^^ ^^^ ^^^:</label>
-                </div>
-                <div class="col-3">
-                    <span id="g25-value"></span>
-                </div>
-            </div>
+      <div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">МИНИМАЛЬНАЯ ЦЕНА:</label>
+          </div>
+          <div class="col-3">
+            <span id="g8-value"></span>
+          </div>
         </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">OZ+ИМ+ТОМА+++++:</label>
+          </div>
+          <div class="col-3">
+            <span id="g15-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">OZ=Тома СТАРцена===:</label>
+          </div>
+          <div class="col-3">
+            <span id="g17-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">*ЯМ===5М===5М====ЯМ*:</label>
+          </div>
+          <div class="col-3">
+            <span id="g21-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">^^^ ^^^ ^^^ ^^^ ^^^ ^^^:</label>
+          </div>
+          <div class="col-3">
+            <span id="g25-value"></span>
+          </div>
+        </div>
+      </div>
     </div>
-        <button id="standart-apply-btn" class="btn btn-secondary w-100 back-btn">Заполнить</button>
-        <button id="standart-back-btn" class="btn btn-secondary w-100 back-btn">Назад</button>
+    <button id="standart-apply-btn" class="btn btn-secondary w-100 back-btn">Заполнить</button>
+    <button id="standart-back-btn" class="btn btn-secondary w-100 back-btn">Назад</button>
   </div>
 
   <div id="doubleminus" class="page">
     <h3 id="doubleminus-header">Перекос и два минуса</h3>
     <div class="row">
-        <div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">МИНИМАЛЬНАЯ ЦЕНА:</label>
-                </div>
-                <div class="col-3">
-                    <span id="j8-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">Цена продажи:</label>
-                </div>
-                <div class="col-3">
-                    <span id="j13-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">OZ+ИМ+ТОМА+++++:</label>
-                </div>
-                <div class="col-3">
-                    <span id="j15-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">*ЯМ===5М===5М====ЯМ*:</label>
-                </div>
-                <div class="col-3">
-                    <span id="j21-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
+      <div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">МИНИМАЛЬНАЯ ЦЕНА:</label>
+          </div>
+          <div class="col-3">
+            <span id="j8-value"></span>
+          </div>
         </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">Цена продажи:</label>
+          </div>
+          <div class="col-3">
+            <span id="j13-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">OZ+ИМ+ТОМА+++++:</label>
+          </div>
+          <div class="col-3">
+            <span id="j15-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">*ЯМ===5М===5М====ЯМ*:</label>
+          </div>
+          <div class="col-3">
+            <span id="j21-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+      </div>
     </div>
-        <button id="doubleminus-apply-btn" class="btn btn-secondary w-100 back-btn">Заполнить</button>
-        <button id="doubleminus-back-btn" class="btn btn-secondary w-100 back-btn">Назад</button>
+    <button id="doubleminus-apply-btn" class="btn btn-secondary w-100 back-btn">Заполнить</button>
+    <button id="doubleminus-back-btn" class="btn btn-secondary w-100 back-btn">Назад</button>
   </div>
 
   <div id="ro" class="page">
     <h3 id="ro-header">Ромашка и RO</h3>
-        <div class="row">
-        <div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">МИНИМАЛЬНАЯ ЦЕНА:</label>
-                </div>
-                <div class="col-3">
-                    <span id="m8-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">Цена продажи:</label>
-                </div>
-                <div class="col-3">
-                    <span id="m13-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">OZ+ИМ+ТОМА+++++:</label>
-                </div>
-                <div class="col-3">
-                    <span id="m15-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-4">
-                    <label class="compute-label">*ЯМ===5М===5М====ЯМ*:</label>
-                </div>
-                <div class="col-3">
-                    <span id="m21-value"></span>
-                </div>
-            </div>
-            <div class="row compute-block">
-                <div class="col-5"></div>
-                <div class="col-3">
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                    <div class="gray-rectangle mb-1"></div>
-                </div>
-            </div>
+    <div class="row">
+      <div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">МИНИМАЛЬНАЯ ЦЕНА:</label>
+          </div>
+          <div class="col-3">
+            <span id="m8-value"></span>
+          </div>
         </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">Цена продажи:</label>
+          </div>
+          <div class="col-3">
+            <span id="m13-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">OZ+ИМ+ТОМА+++++:</label>
+          </div>
+          <div class="col-3">
+            <span id="m15-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-6">
+            <label class="compute-label">*ЯМ===5М===5М====ЯМ*:</label>
+          </div>
+          <div class="col-3">
+            <span id="m21-value"></span>
+          </div>
+        </div>
+        <div class="row compute-block">
+          <div class="col-7"></div>
+          <div class="col-3">
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+            <div class="gray-rectangle mb-1"></div>
+          </div>
+        </div>
+      </div>
     </div>
-        <button id="ro-apply-btn" class="btn btn-secondary w-100 back-btn">Заполнить</button>
-        <button id="ro-back-btn" class="btn btn-secondary w-100 back-btn">Назад</button>
+    <button id="ro-apply-btn" class="btn btn-secondary w-100 back-btn">Заполнить</button>
+    <button id="ro-back-btn" class="btn btn-secondary w-100 back-btn">Назад</button>
   </div>
 
   <script src="initialState.js"></script>
